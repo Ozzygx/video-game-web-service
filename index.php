@@ -2,7 +2,27 @@
 <head>
 <title>Bond Web Service Demo</title>
 <style>
-body {font-family:georgia;}
+	body {font-family:georgia;}
+
+	.film{
+		border:1px solid #E77DC2;
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom:5px;
+		position:relative;	
+	}
+
+	.pic{
+		position:absolute;
+		right:10px;
+		top:10px;
+}
+
+
+
+
+
+
 </style>
 <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
@@ -28,11 +48,6 @@ function loadAJAX(cat)
 		url: "api.php?cat=" + cat,
 		success: bondJSON
 	});
-
-
-
-
-
 }
     
 function toConsole(data)
@@ -41,7 +56,17 @@ function toConsole(data)
 }
 
 function bondJSON(data){
+	//Here is how I see data returned via the console
 	console.log(data); 
+
+	//this loads the data on the page but its bunched up
+	//$("#output").text(JSON.stringify(data));
+
+	//this creates a map of the JSON on our page
+	let myData = JSON.stringify(data,null,4);
+	myData = "<pre>" + myData + "</pre>";
+	$("#output").html(myData);
+
 }
 
 </script>
