@@ -9,7 +9,8 @@
 				"Year":1991,
 				"Rating":"E",
 				"Image":"sonic-the-hedgehog.jpg"
-			  },			  
+			  },
+
 			  {
 				"Title":"Super Mario Kart",
 				"Genre":"Racing",
@@ -17,7 +18,8 @@
 				"Year":1992,
 				"Rating":"E",
 				"Image":"super-mario-kart.jpg"
-			  },			 
+			  },
+
 			  {
 				"Title":"Portal",
 				"Genre":"Puzzle",
@@ -25,7 +27,8 @@
 				"Year":2007,
 				"Rating":"T",
 				"Image":"portal.jpg"
-			  },			  
+			  },
+
 			  {
 				"Title":"Minecraft",
 				"Genre":"Sandbox",
@@ -33,7 +36,8 @@
 				"Year":2011,
 				"Rating":"E10+",
 				"Image":"minecraft.jpg"
-			  },			  
+			  },
+
 			  {
 				"Title":"Counter-Strike Global Offensive",
 				"Genre":"Tactical Shooter",
@@ -42,5 +46,5 @@
 				"Rating":"M",
 				"Image":"counter-strike-global-offensive.jpg"
 			  }
-    }
+	]
 }
